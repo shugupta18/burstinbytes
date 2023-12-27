@@ -1,3 +1,12 @@
+### Azure VM
+- Make sure the port 80, 443 are *enabled*
+
+### Ubuntu
+```
+ls -l privkey.pem
+sudo chown shugupta18:shugupta18 /var/privkey.pem
+```
+
 ### SET up site
 
 **Become superuser:**
