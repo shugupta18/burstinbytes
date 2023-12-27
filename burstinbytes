@@ -2,7 +2,7 @@ server {
     listen 80;
     server_name burstinbytes.in www.burstinbytes.in;
 
-    root /var/www/BurstInBytes/html;
+    root /var/www/burstinbytes/html;
     index index.php index.html index.htm;
 
     location / {
