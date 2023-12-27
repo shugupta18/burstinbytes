@@ -2,7 +2,7 @@ server {
     listen 80;
     server_name burstinbytes.in www.burstinbytes.in;
 
-    root /var/www/html;
+    root /var/www/BurstInBytes/html;
     index index.php index.html index.htm;
 
     location / {
@@ -17,10 +17,9 @@ server {
     }
 
     listen 443 ssl; # managed by Certbot
-    ssl_certificate /etc/letsencrypt/live/burstinbytes.in/fullchain.pem; # managed by Certbot
-    ssl_certificate_key /etc/letsencrypt/live/burstinbytes.in/privkey.pem; # managed by Certbot
+    ssl_certificate /var/certs/fullchain.pem; # managed by Certbot
+    ssl_certificate_key /var/certs/privkey.pem; # managed by Certbot
     include /etc/letsencrypt/options-ssl-nginx.conf; # managed by Certbot
     ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem; # managed by Certbot
-
-
+    
 }
