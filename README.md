@@ -1,5 +1,6 @@
 ### Azure VM
 - Make sure the port 80, 443 are *enabled*
+- configure GoDaddy *properly*
 
 ### Ubuntu
 ```
