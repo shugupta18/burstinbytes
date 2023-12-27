@@ -39,7 +39,7 @@ git clone https://github.com/shugupta18/burstinbytes.git
 
 **configure nginx:**
 ```
-scp /var/www/burstinbytes /etc/nginx/sites-available
+scp /var/www/burstinbytes/burstinbytes /etc/nginx/sites-available
 nano /etc/nginx/sites-available/burstinbytes
 ```
 
