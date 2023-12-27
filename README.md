@@ -39,7 +39,7 @@ git clone https://github.com/shugupta18/burstinbytes.git
 **configure nginx:**
 ```
 scp /var/www/burstinbytes /etc/nginx/sites-available
-nano /etc/nginx/sites-available/burstinbutes
+nano /etc/nginx/sites-available/burstinbytes
 ```
 
 **update according to need nginx:**
@@ -49,7 +49,7 @@ nano /etc/nginx/sites-available/burstinbutes
 
 **Create a symbolic link to enable the configuration:**
 ```
-ln -s /etc/nginx/sites-available/burstinbutes /etc/nginx/sites-enabled/
+ln -s /etc/nginx/sites-available/burstinbytes /etc/nginx/sites-enabled/
 ```
 
 **Test Nginx configuration:**
