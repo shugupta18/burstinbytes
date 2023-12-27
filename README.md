@@ -24,6 +24,8 @@ apt install nginx
 **install certbot:**
 ```
 apt install certbot python3-certbot-nginx
+
+sudo certbot --nginx -d burstinbutes.in -d www.burstinbutes.in
 ```
 
 **make dir `/var/www`:**
