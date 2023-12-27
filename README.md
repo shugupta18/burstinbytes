@@ -1,0 +1,64 @@
+### SET up site
+
+**Become superuser:**
+```
+sudo su
+```
+
+**install nginx:**
+```
+apt update
+apt install nginx
+```
+
+**install certbot:**
+```
+apt install certbot python3-certbot-nginx
+```
+
+**make dir `/var/www`:**
+```
+mkdir -p /var/www
+```
+
+**git clone repo:**
+```
+cd /var/www
+git clone https://github.com/shugupta18/burstinbytes.git
+```
+
+**configure nginx:**
+```
+scp /var/www/burstinbytes /etc/nginx/sites-available
+nano /etc/nginx/sites-available/burstinbutes
+```
+
+**update according to need nginx:**
+```
+# sites, url
+```
+
+**Create a symbolic link to enable the configuration:**
+```
+ln -s /etc/nginx/sites-available/burstinbutes /etc/nginx/sites-enabled/
+```
+
+**Test Nginx configuration:**
+```
+nginx -t
+```
+
+**Restart nginx:**
+```
+service nginx restart
+```
+
+**setup cron**
+```
+sudo crontab -e
+0 */12 * * * certbot renew --quiet
+```
+
+
+
+
