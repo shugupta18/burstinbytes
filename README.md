@@ -43,7 +43,6 @@ git clone https://github.com/shugupta18/burstinbytes.git
 ```
 scp /var/www/burstinbytes/burstinbytes /etc/nginx/sites-available
 
-scp /var/www/burstinbytes/digitalorder.in /etc/nginx/sites-available
 nano /etc/nginx/sites-available/burstinbytes
 ```
 
@@ -55,6 +54,9 @@ nano /etc/nginx/sites-available/burstinbytes
 **Create a symbolic link to enable the configuration:**
 ```
 ln -s /etc/nginx/sites-available/burstinbytes /etc/nginx/sites-enabled/
+
+ln -s /etc/nginx/sites-available/digitalorder.in /etc/nginx/sites-enabled/
+
 ```
 
 **Test Nginx configuration:**
